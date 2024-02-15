@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------- */
+/* Global Styling */
+/* ------------- */
+
+html {font-size: 16px;}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: false;
+  line-height: 1.65;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-secondary font-semibold;
+  line-height: 1.15;
+}
+
+h1,
+.text-size-h1 {
+  @apply text-[2.4em] md:text-[2.8em] lg:text-[3.05em] 
+}
+
+h2,
+.text-size-h2 { 
+  @apply text-[2em] md:text-[2.2em] lg:text-[2.44em] 
+}
+
+h3,
+.text-size-h3 { 
+  @apply text-[1.7em] md:text-[1.8em] lg:text-[1.95em]; 
+}
+
+h4,
+.text-size-h4 {
+  @apply text-[1.56em] 
+}
+
+h5,
+.text-size-h5 {
+  @apply text-[1.25em] 
+}
+
+.text-caption {
+  @apply text-[0.8em] 
+}
+
+small,
+.text-small {
+  font-size: 0.64em;
+}
+   
+/* --------------- */
+/* Tailwind Theme */
+/* ------------- */
+
+@layer components {
+  /* Global */
+  .home {
+    @apply overflow-x-hidden;
+  }
+
+  /* Default Elements */
+  .heading {
+    @apply text-white uppercase font-bold text-2xl sm:text-4xl md:text-5xl lg:text-[4.68rem] tracking-tight leading-none;
+  }
+}
+
+
+.video-background {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 90vh;
+  z-index: -1;
+}
+ 
+.video-background iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+ 
+@media (min-aspect-ratio: 16/9) {
+  .video-background iframe {
+    /* height = 100 * (9 / 16) = 56.25 */
+    height: 56.25vw;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-background iframe {
+    /* width = 100 / (9 / 16) = 177.777777 */
+    width: 177.78vh;
+  }
+}
+
+.c-ontainer {
+  @apply w-full md:max-w-7xl xl:max-w-6xl mx-auto px-10 sm:px-6 lg:px-8;
+}
+
+.c-ontainer-nosmall {
+  @apply w-full md:max-w-7xl xl:max-w-6xl mx-auto  sm:px-6 lg:px-8;
+}
+
+.main-navbar {
+  transition: height 0.5s;
+}
+
+.para-content {
+  @apply space-y-3 text-gray-700;
+}
+
+.primary-button {
+  @apply w-48 inline-block text-center px-10 py-2 rounded-full font-medium hover:bg-white border-2 hover:text-black border-primary hover:border-white transition bg-primary text-white;
+}
+.primary-button-2 {
+  @apply w-48 inline-block text-center cursor-pointer px-10 py-2 rounded-full font-medium hover:bg-white border-2 hover:text-black border-primary transition bg-primary text-white;
+}
+
+
+.accordion-content {
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Class to represent the active state */
+.accordion-content.active {
+  max-height: 2000px;
+  @apply py-10;
+}
+
+
+table th, table td {
+  @apply border border-gray-300 p-4;
+}
+
+table th {
+  @apply text-primary;
+}
+
+table td {
+  @apply text-sm text-center;
+}
