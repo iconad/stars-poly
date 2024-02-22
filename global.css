@@ -139,9 +139,11 @@ small,
 
 /* Class to represent the active state */
 .accordion-content.active {
-  max-height: 2000px;
+  height: 1000px;
   @apply py-10;
+  overflow-y: scroll;
 }
+
 
 
 table th, table td {

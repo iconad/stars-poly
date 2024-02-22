@@ -72,7 +72,7 @@
         <section class="storage-tanks py-16 md:py-32 relative">
 
           <div class="absolute -left-[100px] -top-[100px] md:-top-[190px]">
-            <img src="./assets/img/star.png" alt="star" class="w-64 md:w-96">
+            <img src="./assets/img/star.png" alt="star" class="star-image w-64 md:w-96">
           </div>
 
           <div class="c-ontainer">
@@ -137,7 +137,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-16">
 
               <div class="number space-y-3 text-center lg:text-left">
-                <p class="text-8xl font-secondary scroll-counter" data-counter-time="1500">1000</p>
+                <p class="text-8xl font-secondary scroll-counter" data-counter-time="1500" data-counter-time="1500">1000</p>
                 <p class="text-xl font-medium text-gray-700">Projects</p>
               </div>
               <!-- number -->
@@ -147,7 +147,7 @@
               </div>
 
               <div class="number space-y-3 text-center lg:text-left">
-                <p class="text-8xl font-secondary">3500</p>
+                <p class="text-8xl font-secondary scroll-counter" data-counter-time="1500" data-counter-time="1500">3500</p>
                 <p class="text-xl font-medium text-gray-700">User Comments</p>
               </div>
               <!-- number -->
@@ -157,7 +157,10 @@
               </div>
 
               <div class="number space-y-3 text-center lg:text-left">
-                <p class="text-8xl font-secondary">100%</p>
+                <p class="text-8xl font-secondary w-full flex items-center justify-center"> 
+                  <span data-counter-time="1500" class="scroll-counter" data-counter-time="1500">100</span> 
+                  <span>%</span>
+                </p>
                 <p class="text-xl font-medium text-gray-700">Happy Clients</p>
               </div>
               <!-- number -->
@@ -171,13 +174,13 @@
 
 
         <section class="experience py-16 md:py-20 relative">
-          <div class="absolute -bottom-[30%] -right-[10%] flex items-end justify-end">
-            <img src="./assets/img/star.png" alt="star" class="w-4/5">            
+          <div class="absolute -bottom-[30%] -right-[30%] sm:-right-[15%] flex items-end justify-end">
+            <img src="./assets/img/star.png" alt="star" class="star-image w-4/5">            
           </div>
           <div class="c-ontainer relative z-10">
             <div class="lg:flex space-y-10 lg:space-y-0 text-center lg:text-left">
               <div class="w-full">
-                <p class="text-primary font-secondary font-semibold text-5xl lg:text-7xl lg:leading-[3.8rem]">
+                <p class="text-primary font-secondary font-semibold text-4xl sm:text-5xl lg:text-7xl lg:leading-[3.8rem]">
                   22 years of <br class="hidden md:block"> 
                   experience helping <br class="hidden md:block"> 
                   people with the <br class="hidden md:block"> 
@@ -367,7 +370,13 @@
 
 
         <section class="py-32 marquee">
-          <p class="marquee__inner text-[8rem] sm:text-[10rem] md:text-[14rem] lg:text-[16rem] font-bold whitespace-nowrap opacity-25 font-secondary -tracking-[10px]">One quality for all our products.</p>
+          <p class="marquee__inner text-[8rem] sm:text-[10rem] md:text-[14rem] lg:text-[16rem] font-bold whitespace-nowrap opacity-25 font-secondary -tracking-[10px]">
+            One quality for all our products. 
+            One quality for all our products. 
+            One quality for all our products. 
+            One quality for all our products. 
+            One quality for all our products. 
+          </p>
         </section>
 
 
@@ -391,12 +400,12 @@
 
         <section class="py-16">
           <div class="c-ontainer">
-            <div class="flex flex-col md:flex-row items-center text-center md:text-left space-y-8 md:space-y-0">
+            <div class="flex flex-col lg:flex-row items-center text-center lg:text-left space-y-8 lg:space-y-0">
 
               <div class="w-full">
                 <div class="space-y-6">
                   <a href="./index.html">
-                    <img src="./assets/img/logo.png" alt="logo" class="w-20 mx-auto"/>
+                    <img src="./assets/img/logo.png" alt="logo" class="w-20 mx-auto lg:mx-0"/>
                   </a>
                   <p class="text-4xl md:text-5xl text-primary font-bold font-secondary leading-none -tracking-[1px]">Location on <br class="hidden md:block"> Map</p>
                   <div class="leading-snug text-lg md:text-xl">
@@ -404,7 +413,7 @@
                     <p>Industrial Area 4 - Dubai</p>
                     <p>United Arab Emirates</p>
                   </div>
-                  <div class="flex flex-col md:flex-row items-center space-x-3 text-lg md:text-xl">
+                  <div class="flex flex-col lg:flex-row items-center space-x-3 text-lg md:text-xl">
                     <a href="mailto:inquire@starspoly.com" class="border-b border-transparent hover:border-black text-xl">inquire@starspoly.com</a>
                     <img src="./assets/img/sstar.png" alt="star" class="w-3">
                     <a href="tel:+97143476200" class="border-b border-transparent hover:border-black">+971 4 347 6200</a>
